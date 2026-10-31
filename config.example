@@ -1,0 +1,14 @@
+# Repo Linker config — copy to ~/.config/repo-linker/config
+
+# Your root (parent) repo. Repos you link become submodules of it.
+ROOT="$HOME/Projects"
+
+# One line per GitHub account: "Label|ssh-host|commit name|commit email"
+# ssh-host is the Host from ~/.ssh/config (use github.com for your default key).
+ACCOUNTS=(
+  "Me|github.com|Your Name|you@example.com"
+  # "Work|github-work|Your Name|you@work.example"
+)
+
+# Optional: a command to run after each link. $REPO_DIR and $REPO_SLUG are set.
+AFTER_LINK=""

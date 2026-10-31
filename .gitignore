@@ -1,0 +1,6 @@
+*.pem
+*.key
+*.env
+.env*
+id_*
+*token*
